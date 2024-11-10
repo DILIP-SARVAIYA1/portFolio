@@ -13,7 +13,7 @@ const Navbar = () => {
             {/*      <!-- Brand logo --> */}
             <dir className="flex items-center">
               <Link to="/">
-                <img className="w-12 h-9" src={logo} alt="logo" />
+                <img className="w-10 h-7" src={logo} alt="logo" />
               </Link>
             </dir>
             {/*      <!-- Mobile trigger --> */}
