@@ -1,29 +1,20 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
+import logo from "../images/logo.PNG";
 
 const Navbar = () => {
   const [isToggleOpen, setIsToggleOpen] = useState(false);
-  const firstCurly = "{";
-  const lastCurly = "}";
-
   return (
     <>
       {/*<!-- Component: Navbar with CTA --> */}
-      <header className="relative z-20 w-full border-b shadow-lg shadow-slate-700/5 after:absolute after:left-0 after:top-full after:z-10 after:block after:h-px after:w-full after:bg-slate-800 lg:border-slate-800 lg:backdrop-blur-sm lg:after:hidden">
-        <div className="relative mx-auto max-w-full px- lg:max-w-5xl xl:max-w-7xl 2xl:max-w-[96rem]">
-          <nav
-            aria-label="main navigation"
-            className="flex h-[5rem] items-stretch justify-between font-medium text-white"
-          >
+      <header className="sticky  z-20 w-full border-b shadow-lg shadow-slate-700/5 after:absolute after:left-0 after:top-full after:z-10 after:block after:h-px after:w-full after:bg-slate-800 lg:border-slate-800 lg:backdrop-blur-sm lg:after:hidden">
+        <div className="relative mx-auto max-w-full lg:max-w-5xl xl:max-w-7xl 2xl:max-w-[96rem]">
+          <nav className="flex h-[4.5rem] items-stretch justify-between font-medium text-white">
             {/*      <!-- Brand logo --> */}
-            <dir className="">
-              <a
-                className="flex items-center py-2 text-lg whitespace-nowrap focus:outline-none lg:flex-1"
-                href="#"
-              >
-                <span className="text-4xl font-bold">{firstCurly}</span>
-                <span className="text-4xl text-slate-100">D</span>
-                <span className="text-4xl font-bold">{lastCurly}</span>
-              </a>
+            <dir className="flex items-center">
+              <Link to="/">
+                <img className="w-12 h-9" src={logo} alt="logo" />
+              </Link>
             </dir>
             {/*      <!-- Mobile trigger --> */}
             <button
@@ -64,25 +55,27 @@ const Navbar = () => {
               }`}
             >
               <li role="none" className="flex items-stretch">
-                <a
+                <Link
+                  to={"/"}
                   role="menuitem"
                   aria-haspopup="false"
                   className="flex items-center gap-2 py-2 transition-colors duration-300 hover:text-emerald-500 focus:text-emerald-600 focus:outline-none focus-visible:outline-none lg:px-8"
                   href="#"
                 >
                   <span>Home</span>
-                </a>
+                </Link>
               </li>
 
               <li role="none" className="flex items-stretch">
-                <a
+                <Link
+                  to={"/projects"}
                   role="menuitem"
                   aria-haspopup="false"
                   className="flex items-center gap-2 py-2 transition-colors duration-300 hover:text-emerald-500 focus:text-emerald-600 focus:outline-none focus-visible:outline-none lg:px-8"
                   href="#"
                 >
                   <span>Projects</span>
-                </a>
+                </Link>
               </li>
             </ul>
           </nav>
