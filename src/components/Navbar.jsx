@@ -59,7 +59,7 @@ const Navbar = () => {
                   to={"/"}
                   role="menuitem"
                   aria-haspopup="false"
-                  className="flex items-center gap-2 py-2 transition-colors duration-300 hover:text-emerald-500 focus:text-emerald-600 focus:outline-none focus-visible:outline-none lg:px-8"
+                  className="flex items-center gap-2 py-2 transition-colors duration-300 hover:text-emerald-400 focus:text-emerald-400 focus:outline-none focus-visible:outline-none lg:px-8"
                   href="#"
                 >
                   <span>Home</span>
@@ -71,7 +71,7 @@ const Navbar = () => {
                   to={"/projects"}
                   role="menuitem"
                   aria-haspopup="false"
-                  className="flex items-center gap-2 py-2 transition-colors duration-300 hover:text-emerald-500 focus:text-emerald-600 focus:outline-none focus-visible:outline-none lg:px-8"
+                  className="flex items-center gap-2 py-2 transition-colors duration-300 hover:text-emerald-400 focus:text-emerald-400 focus:outline-none focus-visible:outline-none lg:px-8"
                   href="#"
                 >
                   <span>Projects</span>
