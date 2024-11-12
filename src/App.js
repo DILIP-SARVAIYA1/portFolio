@@ -1,16 +1,17 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Body from "./components/Body";
 import Projects from "./components/Projects";
-import MainPage from "./components/MainPage";
-import AboutMe from "./components/AboutMe";
+import HomePage from "./components/HomePage";
 
 function App() {
   return (
-    <BrowserRouter basename="/">
+    <BrowserRouter
+      basename="/"
+      future={{ v7_relativeSplatPath: true, v7_startTransition: true }}
+    >
       <Routes>
         <Route path="/" element={<Body />}>
-          <Route path="/" element={<MainPage />}></Route>
-          <Route path="/" element={<AboutMe />}></Route>
+          <Route path="/" element={<HomePage />}></Route>
           <Route path="/projects" element={<Projects />}></Route>
         </Route>
       </Routes>

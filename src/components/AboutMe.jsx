@@ -3,10 +3,10 @@ import myImage from "../images/myImage.jpg";
 
 const AboutMe = () => {
   return (
-    <section className="text-white  min-h-full m-6 sm:mx-16">
+    <section className="text-white  m-6 sm:mx-16">
       <div className=" sm:flex sm:gap-4 justify-center sm:justify-between sm:items-center">
         <div className="sm:flex sm:flex-col sm:gap-4 sm:w-2/4">
-          <h2 className="text-2xl font-bold my-4">⚡ About Me</h2>
+          <h2 className="text-2xl font-bold mb-4">⚡ About Me</h2>
           <p>
             Hey! I'm Dilip sarvaiya, I've been close to a computer since an
             early age, and been passionate about it ever since. I really liked
